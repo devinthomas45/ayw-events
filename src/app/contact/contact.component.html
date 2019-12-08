@@ -2,42 +2,45 @@
 <section class="container ">
 
     <div class="py-5">
-        <div class="py-5">
-    <div class="py-5 text-center">
-            <h2 class="primary-text display-3">Send us your request!</h2>
-            <hr>
-            <p class="lead">Fill out the form below and we will reach out and discuss event details.</p>
-    </div>
-    
+        <div >
+
+                <div class="py-5">
+                        <section class="text-center ">
+                            <h2 class="display-3 primary-text">Send us your request!</h2>
+                            <hr />
+                            <p class="lead">Fill out the form below and we will reach out and discuss event details.</p>
+                        </section>
+                    </div>
+
     <div class="">
         <img src="../../assets/images/baby-shower-birthday-buffet-587741.jpg" class="img-fluid" alt="">
     </div>
     
     <hr />
     
-            <form asp-action="Create">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <form action="Create">
+                <div summary="ModelOnly" class="text-danger"></div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label asp-for="Name" ></label>
-                            <input asp-for="Name" class="form-control" />
-                            <span asp-validation-for="Name" class="text-danger"></span>
+                            <label for="Name" >Name</label>
+                            <input for="Name" class="form-control" placeholder="Name"/>
+                            <span for="Name" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <label asp-for="Email" ></label>
-                            <input asp-for="Email" class="form-control" />
-                            <span asp-validation-for="Email" class="text-danger"></span>
+                            <label for="Email" >Email</label>
+                            <input for="Email" class="form-control" placeholder="Email"/>
+                            <span for="Email" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <label asp-for="Phone" ></label>
-                            <input asp-for="Phone" class="form-control" />
-                            <span asp-validation-for="Phone" class="text-danger"></span>
+                            <label for="Phone" >Phone</label>
+                            <input for="Phone" class="form-control" placeholder="Phone"/>
+                            <span for="Phone" class="text-danger"></span>
                         </div>
                         <!-- <div class="form-group">
-                            <label asp-for="Service" class="control-label"></label>
-                            <input asp-for="Service" class="form-control" />
-                            <span asp-validation-for="Service" class="text-danger"></span>
+                            <label for="Service" class="control-label"></label>
+                            <input for="Service" class="form-control" />
+                            <span for="Service" class="text-danger"></span>
                         </div> -->
                         <div>
     
@@ -54,23 +57,22 @@
     
                     </div>
                     <div class="col-lg-6">
-                            <label for="">Location: </label>
                         <div class="form-group">
-                            <label asp-for="Location" ></label>
-                            <input asp-for="Location" class="form-control" />
-                            <span asp-validation-for="Location" class="text-danger"></span>
+                            <label for="Location" >Location</label>
+                            <input for="Location" class="form-control" placeholder="Location"/>
+                            <span for="Location" class="text-danger"></span>
                         </div>
     
-                        <label for="">Date: </label>
+                    
                         <div class="form-group">
-                            <label asp-for="Date" ></label>
-                            <input asp-for="Date" class="form-control" />
-                            <span asp-validation-for="Date" class="text-danger"></span>
+                            <label for="Date" >Date</label>
+                            <input for="Date" class="form-control" placeholder="Date"/>
+                            <span for="Date" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <label asp-for="Details" ></label>
-                            <textarea asp-for="Details" class="form-control" rows="6" ></textarea>
-                            <span asp-validation-for="Details" class="text-danger"></span>
+                            <label for="Details" >Details</label>
+                            <textarea for="Details" class="form-control" rows="6" placeholder="Details"></textarea>
+                            <span for="Details" class="text-danger"></span>
                         </div>
                     </div>
                 </div>
@@ -81,11 +83,6 @@
                 </div>
             </form>
     
-    
-    <div>
-        <a asp-action="Index">Back to List</a>
-    </div>
-
     </div>
     </div>
     </section>
