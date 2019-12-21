@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EventRequest } from 'src/models/event-request';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-event',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
+
+
   }
 
 }
