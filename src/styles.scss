@@ -2,6 +2,10 @@
 /* 
   Carousel settings 
   */
+  *{
+    margin: 0;
+    padding: 0;
+  }
 $primary:  #198c8c;
   $dancing-script: 'Dancing Script', cursive;
 
@@ -22,14 +26,15 @@ $primary:  #198c8c;
   }
   
   body {
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(247, 247, 247);
     font-family: "Montserrat", sans-serif;
-    overflow-x: hidden;
+  
+
   }
   
-  h1, h2 {
+  h1, h2,h3,h4 {
     font-family: "Cormorant", serif;
-    font-weight: 900;
+    
   }
   
   h2 {
@@ -64,18 +69,12 @@ $primary:  #198c8c;
     background-color: #464949;
   }
   
-  section {
-    padding: 30px 30px;
-  }
-  
+ 
   .py-20 {
     padding: 20%;
   }
   
-  .portfolio-img:Hover {
-    opacity: .2;
-    z-index: 0;
-  }
+ 
   
   .portfolio-img {
     position: relative;
@@ -86,7 +85,7 @@ $primary:  #198c8c;
   }
   
   .portfolio .row .col-lg-6 img {
-    width: 100%;
+    width: 95%;
     height: 400px;
   }
   
@@ -101,12 +100,7 @@ $primary:  #198c8c;
     z-index: 2;
   }
   
-  .navbar-nav {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  
+
   .white-bg {
     background-color: #f7f7f7;
   }
@@ -125,7 +119,7 @@ $primary:  #198c8c;
   padding: 0 10%
  }
  p{
-   line-height: .8cm;
+   line-height: .9cm;
    
  }
   /*# sourceMappingURL=site.css.map */

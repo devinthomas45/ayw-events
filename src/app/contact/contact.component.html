@@ -1,91 +1,82 @@
-<section class="m-auto" style="padding-top: 10%; padding-bottom: 8%;">
-    <h2 class="display-3 text-center primary-text">Request your next event with us!</h2>
-    <div class="container">
-        <hr>
-    </div>
-    <div class="row pt-5">
-        <div class="col-lg-5">
-            <img src="../../assets/images/baby-shower-birthday-buffet-587741.jpg" alt="Birthday Shower"
-                class="img-fluid" >
+<section class=" mt-5">
+
+    <section class="text-center mb-0 pt-5">
+        <h1 class=" primary-text">Service Request</h1>
+        <div class="w-25 mx-auto">
+            <hr>
         </div>
-        <div class="col-lg-7">
-            <section class="m-0 p-0">
-                <h3 class="primary-text">Event Request Form</h3>
-                <p class="lead text-muted">Fill out the form below and we will reach out and discuss event details.</p>
-            </section>
-            <form class="" [formGroup]="eventForm" (ngSubmit)="onSubmit()">
-                <div summary="ModelOnly" class="text-danger"></div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label for="Name">Name</label>
-                            <input for="Name" class="form-control" formControlName="name" placeholder="Name" required />
-                            <span for="Name" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="Email">Email</label>
-                            <input for="Email" class="form-control" formControlName="email"
-                                placeholder="Email required" />
-                            <span for="Email" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="Phone">Phone</label>
-                            <input for="Phone" class="form-control" formControlName="phone"
-                                placeholder="Phone required" />
-                            <span for="Phone" class="text-danger"></span>
-                        </div>
-                        <!-- <div class="form-group">
-                                    <label for="Service" class="control-label"></label>
-                                    <input for="Service" class="form-control" />
-                                    <span for="Service" class="text-danger"></span>
-                                </div> -->
-                        <div>
+        <p>Send us your service request by filling out our form below!</p>
+    </section>
 
 
-    
-                        </div>
 
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label for="Location">Location</label>
-                            <input for="Location" formControlName="location" class="form-control" placeholder="Location"
-                                required />
-                            <span for="Location" class="text-danger"></span>
-                        </div>
+<div class="col-lg-7 mx-auto">
 
-
-                        <div class="form-group">
-                            <label for="Date">Date</label>
-                            <input for="Date" formControlName="date" class="form-control" placeholder="Date" required />
-                            <span for="Date" class="text-danger"></span>
-                        </div>
-                        <label for="">Service: </label>
-                        <select id="inputState" formControlName="service" class="form-control" required>
-                            <option selected>Select a service...</option>
-                            <option>Catering</option>
-                            <option>Bartending</option>
-                            <option>Event Planning</option>
-                            <option>Photography</option>
-                        </select>
-                    </div>
-
-                </div>
-
+    <form  [formGroup]="eventForm" (ngSubmit)="sendEmail(eventForm.value)">
+        <div summary="ModelOnly" class="text-danger"></div>
+        <div class="row">
+            <div class="col-lg-6">
                 <div class="form-group">
-                    <label for="Details">Details <span *ngIf="details.errors.required">Name is
-                            required</span></label>
-                    <textarea for="Details" class="form-control" formControlName="details" rows="6"
-                        placeholder="Details" required></textarea>
-                    <span for="Details" class="text-danger"></span>
+                    <input for="Name" class="form-control shadow" formControlName="name" placeholder="Name" required />
+                    <span for="Name" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Create" class="btn text-white bg-primary" />
+                    <input for="Email" class="form-control shadow" formControlName="email"
+                        placeholder="Email" />
+                    <span for="Email" class="text-danger"></span>
                 </div>
-            </form>
+                <div class="form-group">
+                    <input for="Phone" class="form-control shadow" formControlName="phone"
+                        placeholder="Phone" />
+                    <span for="Phone" class="text-danger"></span>
+                </div>
+                <!-- <div class="form-group">
+                            <label for="Service" class="control-label"></label>
+                            <input for="Service" class="form-control" />
+                            <span for="Service" class="text-danger"></span>
+                        </div> -->
+                <div>
+
+
+
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <input for="Location" formControlName="location" class="form-control shadow" placeholder="Location"
+                        required />
+                    <span for="Location" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <input for="Date" formControlName="date" class="form-control shadow" type="date" placeholder="Date" required />
+                    <span for="Date" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                <select id="inputState"  class="form-control shadow" >
+                    <option value="Select a service..." selected>Select a service...</option>
+                    <option formControlName="service"  value="Catering">Catering</option>
+                    <option formControlName="service"  value="Bartending">Bartending</option>
+                    <option formControlName="service"  value="Event Planning">Event Planning</option>
+                    <option  formControlName="service" value="Photography">Photography</option>
+                </select>
+            </div>
         </div>
-    </div>
+        </div>
 
+        <div class="form-group">
+            <textarea for="details" class="form-control shadow" formControlName="details" rows="6"
+                placeholder="Details" required></textarea>
+            <span for="details" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="SEND REQUEST" class="btn primary-text mb-3 bg-white shadow" />
+        </div>
+    </form>
 
-
+</div>
 </section>
+
+

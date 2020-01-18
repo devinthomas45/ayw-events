@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EventRequest } from 'src/models/event-request';
 import { FormGroup, Validator ,FormBuilder, Validators} from '@angular/forms';
+declare let Email;
 
 @Component({
   selector: 'app-contact',
@@ -10,20 +11,32 @@ import { FormGroup, Validator ,FormBuilder, Validators} from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   public eventRequest:EventRequest;
+  
   public eventForm = this.fb.group({
-    name:['',Validators.required],
-    email:['',Validators.required],
-    phone:['',Validators.required],
-    service:['',Validators.required],
-    location:['',Validators.required],
-    date:['',Validators.required],
-    details:['',Validators.required],
+    name:[''],
+    email:[''],
+    phone:[''],
+    service:[''],
+    location:[''],
+    date:[''],
+    details:['']
   });
 
-  onSubmit(){
-    window.alert("Form submitted!");
+  sendEmail(customer:any){
+    Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "dthom94@gmail.com",
+      Password : "7880FF6B7AB606CC4E7C1AF50D30DAAACA6A",
+      To : 'info.AYWEvents@gmail.com',
+      From : customer.email,
+      Subject : customer.name + ' ' + customer.service,
+      Body : customer.message +`\n\nName:${customer.name}\n
+      Email: ${customer.email}
+      \nPhone: ${customer.phoneNumber}`
+  }).then(
+    message => alert(message)
+  );
   }
-  
   constructor(private fb:FormBuilder) { }
 
   ngOnInit() {

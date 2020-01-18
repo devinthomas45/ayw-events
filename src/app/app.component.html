@@ -1,67 +1,71 @@
-<nav class="navbar fixed-top navbar-expand-lg shadow navbar-toggleable-sm navbar-light bg-white p-4" style="z-index:10">
-    <div class="container">
-        <a class="navbar-brand primary-text" href="#" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 900;">
-            <!-- <img src="../../assets/images/ayw-logo.jpg"  width="200" height="90px" class="d-inline-block align-top"/> -->
-            <p class="primary-text  m-0" style="font-family: cursive;">As You Wish LLC.</p>
-        </a> 
+<nav class="navbar  navbar-expand-lg m-0 shadow navbar-toggleable-sm navbar-light bg-white p-4">
+    <div class="container-fluid">
+        <a class="navbar-brand primary-text" href="#">
+            <p class="primary-text  m-0" >As You Wish LLC.</p>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class=" navbar-collapse justify-content-end collapse d-lg-inline-flex flex-lg-row-reverse">
+        <div class=" navbar-collapse collapse d-lg-inline-flex flex-lg-row-reverse">
             <ul class="ml-auto navbar-nav ">
                 <li class="nav-item">
-                    <a class="nav-link " routerLink="" routerLinkActive="">Home</a>
+                    <a class="nav-link primary-text" routerLink="" routerLinkActive="acitve">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " routerLink="about" routerLinkActive="['my-active']">About</a>
+                    <a class="nav-link primary-text" routerLink="about" routerLinkActive="active">About</a>
                 </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link " routerLink="service" routerLinkActive="active">Services</a>
+                </li> -->
                 <li class="nav-item">
-                    <a class="nav-link " routerLink="service" routerLinkActive="my-active">Services</a>
+                    <a class="nav-link primary-text" routerLink="event" routerLinkActive="active">Gallery</a>
                 </li>
-                <li class="nav-item">
-                        <a class="nav-link " routerLink="event" routerLinkActive="my-active">Events</a>
-                    </li>
-                <li class="nav-item ml-2">
-                    <a class="nav-link  "  routerLink="contact" routerLinkActive="my-active">Contact Us</a>
-                    
+                <li class="nav-item ">
+                    <a class="nav-link primary-text" routerLink="contact" routerLinkActive="active">Service Request</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link primary-text" href="#serviceRequest" routerLinkActive="active">Contact Us</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<router-outlet></router-outlet>
+<router-outlet (activate)="onActivate($event)"></router-outlet>
 <footer class="border-top white-text primary-bg py-5 m-0 footer ">
     <div class="py-10">
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="col-lg-4">
-                <h3><b>About us</b></h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s. </p>
-            </div>
-            <div class="col-lg-4">
-                <h3><b>Contact</b></h3>
-                <p>Richard Rorque</p>
-                <p>(993) 888-8888</p>
-                <p>AYWEvents@gmail.com</p>
-            </div>
-            <div class="col-lg-4">
-                <h3><b>Follow us on social</b></h3>
-                <div class="row">
-                    <div class="col-lg-2">
-                     <a href="https://www.facebook.com/aywevents.tx/" class="white-text"><i class="fab fa-facebook display-4"></i> </a> 
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3><b>About us</b></h3>
+                    <p> AYW aims to provide almost a 'One Stop Shop' for event needs, having available services such
+                        as Photography, Catering, Event Services, and more.  </p>
+                </div>
+                <div class="col-lg-4">
+                    <h3><b>Contact</b></h3>
+                    <p><a class="text-white" href="tel:210-986-3743">(210) 986-3743 </a> <i class="fa fa-phone"></i></p>                 
+                    <p><a class="text-white" href="mailto:info.aywevents@gmail.com">info.aywevents@gmail.com </a><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h3><b>Social Links</b></h3>
+                    <div class="row pl-3" >
+
+                        <h3> <a href="https://www.facebook.com/aywevents.tx/" class="white-text float-left"><i
+                                    class="fab fa-facebook "></i> </a>
+                        </h3>
+                        <h3> <a href="https://www.instagram.com/aywevents.tx/" class="white-text ml-2 float-left"> <i
+                                    class="fab fa-instagram "></i> </a>
+                        </h3>
+                        <div class="clearfix"></div>
+
                     </div>
-                    <div class="col-lg-2">
-                           <a href="https://www.instagram.com/aywevents.tx/" class="white-text"> <i class="fab fa-instagram display-4"></i>  </a>
-                            
-                           </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
     <div class="container-fluid py-10">
-        &copy; 2019 - aywevents - <a class="secondary-text" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        &copy; 2019 - aywevents - <a class="secondary-text" asp-area="" asp-controller="Home"
+            asp-action="Privacy">Privacy</a>
     </div>
 </footer>

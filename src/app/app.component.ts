@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ayw-events';
+
+  onActivate(event) {
+   window.scrollTo(0,0);
+}
 }

@@ -1,232 +1,300 @@
-<div id="carouselExampleFade" class="carousel slide carousel-fade bg-white" data-ride="carousel">
-  <div class="primary-bg">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="../../assets/images/fruit-salads.jpg" style="opacity: .5; height: 100vh"
-          alt="First slide">
-        <div class="carousel-caption texr-center  d-none d-md-block">
-          <h1 data-aos="zoom-in" class="display-1 text-white ">An exceptional experience everytime.</h1>
-          <a href="#" routerLink="contact" class="btn btn-lg white-bg btn-raised primary-text">Contact Us</a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="../../assets/images/baked-bread.jpg" style="opacity: .5; height: 100vh;"
-          alt="Second slide">
-        <div class="carousel-caption text-left d-none d-md-block p-5">
-          <h1 class="display-1 text-white ">An exceptional experience everytime.</h1>
-          <a href="#" routerLink="service" class="btn btn-lg white-bg btn-raised primary-text">View services</a>
-        </div>
-      </div>
-      <div class="carousel-item">
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 100vh;
+  }
 
-        <img class="d-block w-100" src="../../assets/images/assorted-cooked.jpg" style="opacity: .5;height: 100vh"
-          alt="Third slide" />
-        <div class="carousel-caption text-right d-none d-md-block">
-          <h1 class="display-1 text-white ">You have fun while we do all the work.</h1>
-          <a href="#" routerLink="event" class="btn btn-lg white-bg btn-raised primary-text">View portfolio</a>
-        </div>
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
 
+
+
+
+<main role="main">
+
+  <div class="container-fluid m-0 p-0">
+    <div id="myCarousel" class="carousel slide bg-white" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img" width="100%" style="opacity: .2;" src="../../assets/images/fruit-salads.jpg"
+            style="opacity: .2;height:90vh" focusable="false" role="img" />
+          <div class="container ">
+            <div class="carousel-caption text-left">
+              <h1 class="display-1  mt-4 primary-text">Catering Events</h1>
+              <p class="lead text-muted">Offering affordable catering packages to meet any event concept and budget to
+                ensure client and guest
+                satisfaction.</p>
+              <p><a class="btn btn-lg bg-white primary-text shadow" href="#" routerLink="contact" role="button">REQUEST
+                  SERVICES</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" src="../../assets/images/Backhus Family/Backhus_2.jpeg"
+            style="opacity: .2;height:90vh" focusable="false" role="img" />
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="display-1  mt-4 primary-text"> Photography and Videography</h1>
+              <p class="lead text-muted">Leaving memories lasting a lifetime for future generations to come.</p>
+              <p><a class="btn btn-lg bg-white primary-text shadow" routerLink="event" href="#" role="button">SEE
+                  GALLERY</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" style="opacity: .2;" src="../../assets/images/baked-bread.jpg"
+            style="opacity: .2;height:90vh" focusable="false" role="img" />
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h1 class="display-1  mt-4 primary-text">Additional Services.</h1>
+              <p class="lead text-muted">We want to be sure your event goes off with out a hitch, so let us be the
+                helping hands that
+                create that unforgetable moment.</p>
+              <p><a class="btn btn-lg bg-white primary-text shadow" href="#services" role="button">READ MORE</a></p>
+            </div>
+          </div>
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <a class="carousel-control-prev mb-5" href="#carouselExampleFade" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next mb-5" href="#carouselExampleFade" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
-</div>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
 
 
-<section class="py-5">
-
-  <div class="container-fluid py-10">
-
-    <div class="">
-      <div class="mx-auto text-center w-75 pb-3 ">
-        <h2 class="">Lorem Ipsum is simply dummy text of the <span class="primary-text">printing</span> and
-          <span class="primary-text">typesetting</span> industry. </h2>
-
-      </div>
+  <!-- Three columns of text below the carousel -->
+  <div class=" p-20 " >
+    <div class="text-center mb-4">
+      <h2>Services</h2>
     </div>
     <div class="row">
-      <div data-aos="fade-left" class="col-lg-3 col-md-6 col-sm-12">
+      <div class="col-lg-4 text-center p-4">
+        <img src="../../assets/images/services/shrimp-cocktail.jpg" style="height:300px;width:100%" alt="" class="img-fluid  rounded">
+        <h3 class="mt-3">Catering</h3>
+        <hr>
+        <p> We serve a wide variety of
+          options from heavy hors d'oeuvres to box lunches and buffet service to full service events.</p>
+        <!-- <p><a class="btn primary-bg shadow text-white" href="#" role="button">View details </a></p> -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 text-center p-4">
+        <img src="../../assets/images/AndyAndChrisEngagement/AndyandChrisEngagement_2.jpeg" style="height:300px;width:100%" alt="" class="img-fluid rounded">
+        <h3 class="mt-3">Photography</h3>
+        <hr>
+        <p>AYW provides amazing work through our Photography &
+          Videogrpahy. We will always provide a minimum of 2 photographers to ensure that each event, regardless of
+          size, captures
+          all your best moments.</p>
+        <!-- <p><a class="btn primary-bg text-white shadow h-100" href="#" role="button">View details </a></p> -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 text-center p-4">
+        <img src="../../assets/images/dancing.jpg" alt="Catering" style="height:300px;width:100%" class="img-fluid rounded">
+        <h3 class="mt-3">Additional</h3>
+        <hr>
+        <p>We provide additional services such as Bartending, Event
+          Set-up/Breakdown, Decorating and more..</p>
+        <!-- <p><a class="btn primary-bg text-white shadow h-100" href="#" role="button">View details </a></p> -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div>
 
-        <img src="../../assets/images/services/catering-celebration-chairs-50675.jpg" height="250" alt=""
-          class="w-100  shadow">
 
-        <h4 class="text-center pt-3"><a class="primary-text" href="#">Private Events</a></h4>
+
+  <div id="banner" >
+    <div class="bg">
+      <div class="text-center">
+        <h2>As You Wish LLC.</h2>
+        <hr>
+        <p class="lead">AYW aims to provide almost a 'One Stop Shop' for event needs, having available services such
+          as Photography, Catering, Event Services, and more. As we begin to build and grow, we always remember that
+          our main goal is the satisfaction of our client and their guests.</p>
+        <a routerLink="about" class="btn bg-white primary-text shadow" href="#">MORE ABOUT US</a>
+
       </div>
-      <div data-aos="fade-left" data-aos-delay="50" class="col-lg-3 col-md-6 col-sm-12">
+    </div>
+  </div>
 
-        <img src="../../assets/images/services/bride-bride-and-groom-celebration-1770964.jpg" alt="" height="250"
-          class="w-100  shadow">
+  <!-- START THE FEATURETTES -->
 
-
-        <h4 class="text-center pt-3"><a class="primary-text" href="#">Weddings</a></h4>
+  <!-- 
+  <div id="about" class="container py-4">
+    <h2 class="featurette-heading">About us
+    </h2>
+    <div class="row featurette">
+      <div class="col-md-5">
+        <img src="../../assets/images/team/partners.jpg" class="img-fluid" alt="">
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="col-lg-3 col-md-6 col-sm-12">
-
-        <img src="../../assets/images/services/birthday-blur-cake-265788.jpg" height="250" alt="" class="w-100 shadow">
-
-        <h4 class="text-center pt-3"><a class="primary-text" href="#">Birthday Parties</a></h4>
+      <div class="col-md-7">
+        <p class="">AYW aims to provide almost a 'One Stop Shop' for event needs, having available services such
+          as Photography, Catering, Event Services, and more. As we begin to build and grow, we always remember that
+          our main goal is the satisfaction of our client and their guests. </p>
+        <a routerLink="about" class="btn bg-white primary-text shadow" href="#">Continue reading</a>
       </div>
-      <div data-aos="fade-left" data-aos-delay="150" class="col-lg-3 col-md-6 col-sm-12">
+  
+    </div>
+  </div> -->
 
-        <img src="../../assets/images/services/banquet-beautiful-catering-2306281.jpg" height="250" alt=""
-          class="w-100 shadow">
+  <div id="services" class="bg-white p-20">
+    <div class="container  ">
+      <h2 class="text-center">Service Details</h2>
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-catering-tab" data-toggle="tab" href="#nav-catering" role="tab"
+            aria-controls="nav-catering" aria-selected="true">Catering</a>
+          <a class="nav-item nav-link" id="nav-photography-tab" data-toggle="tab" href="#nav-photography" role="tab"
+            aria-controls="nav-photography" aria-selected="false">Photo/Video</a>
+          <a class="nav-item nav-link" id="nav-additional-tab" data-toggle="tab" href="#nav-additional" role="tab"
+            aria-controls="nav-additional" aria-selected="false">Additional Services</a>
+        </div>
+      </nav>
+      <div class="tab-content py-3" id="nav-tabContent">
+        <div class="tab-pane container fade show active" id="nav-catering" role="tabpanel"
+          aria-labelledby="nav-catering-tab">
+          <p class="">AYW Catering offers a wide variety of services to fit your event needs. We will help understand
+            each event to ensure we provide the best service for the type of catering you may need. We serve a wide
+            variety of
+            options from heavy hors d'oeuvres to box lunches and buffet service to full service events. AYW Caterinig
+            offers affordable catering packages to meet any event concept and budget to ensure client and guest
+            satisfaction. Servicing the San Antonio area and surrounding cities such as Schertz, New Braunfels, and
+            more, we offer a wide variety of options to include delivery and onsite catering.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="nav-photography" role="tabpanel" aria-labelledby="nav-photography-tab">
+          <p class="">Eager to 'Snap a Shot' of your event. AYW provides amazing work through our Photography &
+            Videogrpahy. We will always provide a minimum of 2 photographers to ensure that each event, regardless of
+            size, captures
+            all your best moments. We will work closely with our hosts, prior to an event, to ensure we have a full
+            understanding of what each client would like. We take this informtion and build upon it, leaving you with
+            that WOW and impactful memory. We want to leave these memories lasting a lifetime for future generations
+            to
+            come.
+          </p>
 
-        <h4 class="text-center pt-3"><a class="primary-text" href="#">Banquets</a></h4>
+        </div>
+        <div class="tab-pane fade" id="nav-additional" role="tabpanel" aria-labelledby="nav-additional-tab">
+          <p class="">We want to be sure your event goes off with out a hitch, so let us be the helping hands that
+            create that unforgetable moment for each of your guests. We provide additional services such as Bartending,
+            Event
+            Set-up/Breakdown, Decorating and more. Safety is the number one prioity of AYW, for both our guests and
+            staff.
+          </p>
+        </div>
       </div>
+      <div>
+      </div>
+    </div>
+    <div>
+      <div class="container-fluid">
+        <div class="text-center">
+          <h3 class="mt-5">
+           We Accept</h3>
+          </div>
+          <hr>
+      <div id="payments" class="row mx-auto p-2">
+        <div class="col-sm-12 col-md-6 col-lg-2">
+          <p class="">
+            <span>
+              <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+            </span>
+            Mastercard</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-2">
+          <p>
+            <span><i class="fa fa-cc-visa" aria-hidden="true"></i></span>
+
+            Visa</p>
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-2">
+          <p>
+            <span><i class="fa fa-cc-discover" aria-hidden="true"></i></span>
+            Discover</p>
+
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-2">
+          <p>
+            <span>
+              <i class="fa fa-cc-amex" aria-hidden="true"></i>
+            </span>
+            Amex</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <p><span><i class="fa fa-credit-card-alt" aria-hidden="true"></i></span> Business Checks</p>
+        </div>
+      </div>
+    </div>
     </div>
 
   </div>
-</section>
 
-
-
-
-
-<section class="py-5">
-  <div class="container-fluid  py-10">
-
-    <h2 class="">About the company.</h2>
-    <hr />
+  <div id="serviceRequest" class=" p-20">
+    <div data-aos="fade-left" class="container-fluid  text-center mx-auto pb-3">
+      <h2>Contact Us</h2>
+      <p class="lead text-muted">Contact us for more information or send us your <a routerLink="contact"
+          class="primary-text font-weight-bold">Request!</a></p>
+    </div>
 
     <div class="row">
-      <div data-aos="fade-in-left" class="col-lg-6 mb-3">
+      <div data-aos="zoom-in" class="col-lg-6 text-center py-2">
+        <img src="../../assets/images/ayw-log0-2.png" alt="" style="height:250px" class="img-fluid mx-auto ">
+        <div class="contact-bar text-center">
 
-        <img src="../../assets/images/team/partners.jpg" alt="" class="img-fluid shadow-lg">
+          <p class="lead">Give us a call <a class="primary-text" href="tel:210-986-3743">(210) 986-3743 </a> <i
+              class="fas fa-phone"></i></p>
+          <p class="lead">Follow us on social <b class="primary-text">@aywevents.tx</b>!</p>
+          <div class="row pl-3">
+
+            <h3> <a href="https://www.facebook.com/aywevents.tx/" class="white-text float-left"><i
+                  class="fab fa-facebook "></i> </a>
+            </h3>
+            <h3> <a href="https://www.instagram.com/aywevents.tx/" class="white-text ml-2 float-left"> <i
+                  class="fab fa-instagram "></i> </a>
+            </h3>
+            <div class="clearfix"></div>
+
+          </div>
+
+        </div>
       </div>
-
-      <div data-aos="fade-in-right" class="col-lg-6">
-
-       <p> As You Wish, LLC , based in San Antonio, Texas, started out like any other business, a quick and small idea
-        that we could do it better. After 5 years of back and forth and trying to figure out what to call the company
-        and what we actually wanted to do, the company was finally born in September of 2018. During a late night movie
-        with friends, Gabby came into the room and said I did it, I started the process of making the business. I don't
-        have to explain how many jaws dropped at the moment, 3 friends who have been dreaming about this for years, was
-        finally here. The hard task and long process of now actually starting a small business was now under way.</p>
-
-       <p> With a combined experience of 40 years in the hospitality industry, each of us knows what it means to provide
-        nothing but the best expereince for our clients and to build only the best memories.</p>
-
-        <p>AYW aims to provide almost a 'One Stop Shop' for event needs, having available services such as Photography,
-        Catering, Event Services, and more. As we begin to build and grow, we always remember that our main goal is the
-        satisfaction of our client and their guests.</p>
-
-       <p> As You Wish, LLC strives to provide amazing service regarless of race, gender, nationality, sexual orientation,
-        and all of the above. Strong supporters of the LGBTQIA+ community, we want each client who utilizes our
-        service(s) to feel comfortable and confident that privacy, safety, and their overall environment is respected.</p>
-
-
-
-
-
-
-
-
+      <div data-aos="fade-in" class="col-lg-6">
+<form [formGroup]="customerForm">
+        <div class="form-group">
+          <input type="text" class="form-control shadow"formControlName="name" id="name" aria-describedby="nameHelp" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control shadow" formControlName="phoneNumber" id="phone" placeholder="Phone Number">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control shadow" formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control shadow" id="message" formControlName="message" rows="6" placeholder="Message"></textarea>
+        </div>
+        <button class="btn primary-bg shadow  text-white" (click)="sendEmail(customerForm.value)">Submit</button>
+      </form>
       </div>
     </div>
   </div>
-</section>
+  <!-- /END THE FEATURETTES -->
 
 
-<section class="m-0  portfolio-bg">
-  <div class=" container-fluid py-10">
-
-    <div class="">
-      <div class=" pb-3">
-        <h2 class="secondary-text">View some of our recent events</h2>
-        <hr />
-        <p class="lead text-muted">Here are some of our catered events</p>
-      </div>
-
-
-      <div class="row">
-        <div data-aos="zoom-in" class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card">
-            <img src="../../assets/images/outing.jpg" height="300" alt="" class="card-img-top shadow">
-
-          </div>
-          <h4 class="text-center pt-3"><a href="#" class="primary-text">Outing</a></h4>
-
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="50" class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card">
-            <img src="../../assets/images/dancing.jpg" alt="" height="300" class="card-img-top shadow">
-          </div>
-          <h4 class="text-center pt-3"><a href="#" class="primary-text">SA Party</a></h4>
-
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="100" class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card">
-            <img src="../../assets/images/pumpkin.jpg" height="300" alt="" class="card-img-top shadow">
-          </div>
-          <h4 class="text-center pt-3"><a href="#" class="primary-text">Pumkin Patch</a></h4>
-
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="150" class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card">
-            <img src="../../assets/images/picnic.jpg" height="300" alt="" class="card-img-top shadow">
-
-          </div>
-          <h4 class="text-center pt-3"><a href="#" class="primary-text">Company Picnic</a></h4>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="py-5">
-
-  <div class="container-fluid py-10">
-
-    <div data-aos="fade-left" class="container-fluid mx-auto pb-3">
-      <h2>Reach out to us for your next event!</h2>
-      <hr />
-      <p class="lead text-muted">Contact us for more information or send us your <a routerLink="event"
-          class="primary-text font-weight-bold">Event Request</a></p>
-    </div>
-
-    <div class="row">
-      <div data-aos="zoom-in" class="col-lg-6">
-        <img src="../../assets/images/team/partners.jpg" alt="" style="height:375px" class="img-fluid w-100 shadow">
-      </div>
-      <div  class="col-lg-6">
-      
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Name">
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="text" class="form-control" id="phone" placeholder="Phone Number">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="Enter email">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" rows="3"></textarea>
-          </div>
-          <button  class="btn primary-bg shadow btn-raised text-white">Submit</button>
-
-      </div>
-    </div>
-
-
-  </div>
-</section>
+</main>
