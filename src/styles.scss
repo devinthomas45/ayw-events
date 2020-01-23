@@ -6,6 +6,12 @@
     margin: 0;
     padding: 0;
   }
+  *{
+    overflow: hidden;
+  }
+  html{
+    overflow-y: scroll;
+  }
 $primary:  #198c8c;
   $dancing-script: 'Dancing Script', cursive;
 
@@ -28,8 +34,6 @@ $primary:  #198c8c;
   body {
     background-color: rgb(247, 247, 247);
     font-family: "Montserrat", sans-serif;
-  
-
   }
   
   h1, h2,h3,h4 {
